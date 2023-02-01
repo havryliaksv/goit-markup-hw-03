@@ -21,9 +21,29 @@
   --btn-accent-color: #ffffff;
   --btn-projects-border-color: #e7e9fc;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
+}
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .link {
   text-decoration: none;
