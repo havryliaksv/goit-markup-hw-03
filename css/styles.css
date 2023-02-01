@@ -34,6 +34,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -44,6 +49,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 .link {
   text-decoration: none;
@@ -112,29 +118,6 @@ body {
 .contact-link:focus {
   color: var(--accent-color);
 }
-/*--------------------FOOTER-------------------------*/
-.footer {
-  background: var(--footer-background-color);
-}
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--footer-logo-color);
-}
-.footer-logo-end {
-  color: var(--footer-logo-end-color);
-}
-.footer-text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--footer-text-color);
-}
-
 /*--------------------HERO-------------------------*/
 .hero {
   background: var(--hero-background-color);
@@ -156,12 +139,17 @@ body {
   background: var(--accent-color);
 }
 /*--------------------FEATURES-------------------------*/
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-bottom: 8px;
 }
 .faetures-text {
   font-size: 16px;
@@ -169,6 +157,9 @@ body {
   letter-spacing: 0.02em;
 }
 /*--------------------CONTENT-------------------------*/
+.content {
+  padding-bottom: 120px;
+}
 .content-title {
   font-size: 36px;
   line-height: 1.11;
@@ -176,10 +167,13 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 72px;
 }
 /*--------------------TEAM-------------------------*/
 .team {
   background: var(--team-background-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title {
   font-size: 36px;
@@ -188,6 +182,7 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 72px;
 }
 .team-item {
   background: var(--team-item-color);
@@ -199,12 +194,18 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 8px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+.team-item-signature {
+  width: 264px;
+  padding: 32px 16px;
+  outline: 2px solid green;
 }
 /*--------------------PROJECTS-------------------------*/
 .projects-subtitle {
@@ -229,4 +230,26 @@ body {
 .projects-btn:focus {
   background: var(--accent-color);
   color: var(--btn-accent-color);
+}
+/*--------------------FOOTER-------------------------*/
+.footer {
+  background: var(--footer-background-color);
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-logo-color);
+}
+.footer-logo-end {
+  color: var(--footer-logo-end-color);
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
 }
