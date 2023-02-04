@@ -3,6 +3,7 @@
   --header-logo-color: #4d5ae5;
   --header-logo-end-color: #2e2f42;
   --header-link-color: #2e2f42;
+  --header-border-color: #e7e9fc;
   --contact-link-color: #434455;
   --hero-background-color: #2e2f42;
   --hero-title-color: #ffffff;
@@ -80,6 +81,9 @@ body {
   margin: -1px;
 }
 /*--------------------HEADER-------------------------*/
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .header-main-nav {
   display: flex;
   align-items: center;
@@ -285,6 +289,11 @@ body {
 .team-item-signature {
   width: 264px;
   padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+  /*
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  */
 }
 /*--------------------PROJECTS-------------------------*/
 .projects-filter {
@@ -342,6 +351,7 @@ body {
   padding-top: 23px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--header-border-color);
 }
 /*--------------------FOOTER-------------------------*/
 .footer {
